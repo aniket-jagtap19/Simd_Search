@@ -1,0 +1,9 @@
+{
+ "config": {"source": "data/sample_dataset.bin", "n": 1000, "dim": 32, "k": 3, "metric": "cosine", "score_label": "cosine_similarity", "seed": 42, "query": "dataset_index:17", "mode": "both", "repeats": 3, "warmup": 1, "statistic": "median", "cpus_available": 1},
+ "results": [{"rank": 1, "id": 17, "score": 1}, {"rank": 2, "id": 357, "score": 0.63726473535308759}, {"rank": 3, "id": 855, "score": 0.55818383381228964}],
+ "serial": {"median_ms": 0.015073000016855076, "runs_ms": [0.015073000016855076, 0.01510800002142787, 0.014889000012772158]},
+ "openmp": [
+   {"threads": 1, "threads_used": 1, "median_ms": 0.016797999996924773, "oversubscribed": false, "speedup": 0.89730920464427344, "efficiency": 0.89730920464427344, "verified": true, "max_abs_score_diff": 0, "runs_ms": [0.01711700001033023, 0.016797999996924773, 0.016456999990623444]}
+ ],
+ "all_verified": true
+}

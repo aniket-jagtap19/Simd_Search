@@ -1,0 +1,14 @@
+SimdSearch  metric=euclidean  n=12  dim=6  k=5  source=data/sample_dataset.csv  query=file:data/sample_query.csv
+
+rank   id         euclidean_distance
+1      10         0.907921772
+2      2          0.997715070
+3      0          1.684268638
+4      5          1.891885581
+5      8          2.090351536
+
+timing: median of 5 run(s) after 1 warm-up run(s); 1 CPU(s) available
+  serial        :     0.0004 ms
+  openmp T=1    :     0.0006 ms   speedup  0.574x   efficiency  0.574   verified
+
+verification: OpenMP results identical to serial (IDs exact, scores within 1e-9)

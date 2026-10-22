@@ -1,0 +1,14 @@
+SimdSearch  metric=cosine  n=12  dim=6  k=5  source=data/sample_dataset.csv  query=file:data/sample_query.csv
+
+rank   id         cosine_similarity
+1      2          0.840625704
+2      10         0.830379564
+3      0          0.242400748
+4      5          0.224934595
+5      8          0.181161505
+
+timing: median of 5 run(s) after 1 warm-up run(s); 1 CPU(s) available
+  serial        :     0.0004 ms
+  openmp T=1    :     0.0007 ms   speedup  0.547x   efficiency  0.547   verified
+
+verification: OpenMP results identical to serial (IDs exact, scores within 1e-9)
